@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musical Nude Series | Limited Edition Art Prints by GV Mielko</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #fffaf7;
+      font-family: 'Georgia', serif;
+      color: #5e4630;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      padding: 4rem 2rem 3rem;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      color: #3a2f2b;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.8rem;
+      font-style: italic;
+      line-height: 2.4rem;
+      max-width: 760px;
+      margin: 0 auto;
+      color: #6e5a4a;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 900px;
+      margin: 4rem auto;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 250, 247, 0.9);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      max-width: 80%;
+      font-style: italic;
+    }
+
+    .return-button {
+      display: inline-block;
+      background-color: #e1cfc1;
+      color: #5e4630;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Georgia', serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 3rem auto;
+      transition: background-color 0.3s ease;
+    }
+
+    .return-button:hover {
+      background-color: #d4bcab;
+    }
+
+    footer {
+      padding: 2rem;
+      font-size: 1.6rem;
+      font-style: italic;
+      color: #5e4630;
+      border-top: 2px solid #ddd;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Musical Nudes</h1>
+    <p>
+      “They are the chord before the lyric,<br />
+      the silence between the notes.<br /><br />
+      Here, music becomes form, and form becomes feeling.”<br />– GV Mielko
+    </p>
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img src="Angieprintify.jpg" alt="Angie — GV Mielko" />
+        <div class="caption">“She played the goodbye. Not with words, but with every chord her body remembered.”</div>
+      </div>
+
+      <div class="slide">
+        <img src="Thornprintify.jpg" alt="Thorn — GV Mielko" />
+        <div class="caption">“She held the rose too close. Now the thorn lives in her heart.”</div>
+      </div>
+
+      <div class="slide">
+        <img src="Strutterprintify.jpg" alt="Strutter — GV Mielko" />
+        <div class="caption">“She didn’t strut for attention. She strutted because the music said she could.”</div>
+      </div>
+    </div>
+
+    <div>
+      <a href="index.html" class="return-button">Return to Welcome Page</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Series by GV Mielko — All Paintings Limited to 100 Archival Prints</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    // Initial slide display
+    showSlide(current);
+
+    // Auto-advance every 8 seconds
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 8000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Original Art for Sale</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional if using external CSS -->
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f7f3f0;
+      margin: 0;
+      padding: 0;
+      color: #6b4f3b;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 6rem;
+      margin-bottom: 10px;
+    }
+
+    .original-art-gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      gap: 30px;
+    }
+
+    .art-piece {
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .art-piece a {
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .art-piece a:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-piece img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .title {
+      margin-top: 12px;
+      font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .original-art-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .art-piece {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="prints.html">Limited Edition Prints</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="video.html">Video Exhibition</a></li>
+  </ul>
+</nav>
+  <header>
+    <h1>Original Art for Sale</h1>
+    <p>Each piece is a conversation—full of color, emotion, and soul.</p>
+  </header>
+
+  <section class="original-art-gallery">
+    <div class="art-piece">
+      <a href="https://etsy.me/40IwELK" target="_blank">
+        <img src="OriginalLaila.jpg" alt="Soft Contemporary Angel Painting Laila by Artist GV Mielko">
+      </a>
+      <p class="title">Laila</p>
+    </div>
+
+    <div class="art-piece">
+      <a href="https://etsy.me/4kyfhnW" target="_blank">
+        <img src="originalsaxxylady.jpg" alt="Abstract Erotic Nude Woman with Saxophone Painting Saxxy Lady by Artist GV Mielko">
+      </a>
+      <p class="title">Saxxy Lady</p>
+    </div>
+
+    <div class="art-piece">
+      <a href="https://etsy.me/46D1U2q" target="_blank">
+        <img src="OrigAngelynneAbstract.jpg" alt="Bold Abstract Angel Angelynne Abstractive by Artist GV Mielko>
+      </a>
+      <p class="title">Angelynne Abstractive</p>
+    </div>
+  </section>
+<footer class="etsy-footer">
+  <p>Available for Purchase Through Etsy</p>
+</footer>
+
+</body>
+</html>

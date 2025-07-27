@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whispers of the Spirit Series | Limited Edition Art Prints by GV Mielko</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #fffaf7;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      color: #5e4630;
+      text-align: center;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 900px;
+      margin: 4rem auto;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 250, 247, 0.9);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      max-width: 80%;
+      font-style: italic;
+    }
+
+    .slide.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Whispers of the Spirit Series</h1>
+    <p>Angels come close. These works invite you to pause and feel what is holy in us.</p>
+  </header>
+
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="Seraphinaprintify.jpg" alt="Seraphina by GV Mielko">
+      <div class="caption">“These pains you feel are messengers. Listen to them.” - Rumi </div>
+    </div>
+
+    <div class="slide">
+      <img src="Teresaprintify.jpg" alt="Teresa by GV Mielko">
+      <div class="caption">“Only from the heart, can you touch the sky.” - Rumi</div>
+    </div>
+
+    <div class="slide">
+      <img src="Ginalynneprintify.jpg" alt="Ginalynne by GV Mielko">
+      <div class="caption">“"My soul is from elsewhere, I'm sure of that, and I intend to end up there." - Rumi</div>
+    </div>
+
+    <div class="slide">
+      <img src="Daraprintify.jpg" alt="Dara by GV Mielko">
+      <div class="caption">“I want to sing like the birds sing, not worrying about who hears or what they think." - Rumi ”</div>
+    </div>
+
+    <div class="slide">
+      <img src="Angelynneprintify.jpg" alt="Angelynne Ethereal by GV Mielko">
+      <div class="caption">“There is a voice that doesn’t use words, listen." - Rumi</div>
+    </div>
+
+    <div class="slide">
+      <img src="Lailaframedgallery.jpg" alt="Laila by GV Mielko">
+      <div class="caption">“Walk by the Spirit, and you will not gratify the desires of the flesh." – Galatians 5:16”</div>
+    </div>
+
+    <div class="slide">
+      <img src="OrigAngelynneAbstract.jpg" alt="Angelynne Abstractive by GV Mielko">
+      <div class="caption">“What hurts you, blesses you. Darkness is your candle.” - Rumi</div>
+    </div>
+  </div>
+  
+<div style="margin-top: 3rem;">
+  <a href="index.html" class="return-button">Return to Welcome Page</a>
+</div>
+
+  <footer class="etsy-footer">
+    <p>Series by GV Mielko — All Paintings Limited to 100 Archival Prints</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.remove('active');
+        if (i === index) s.classList.add('active');
+      });
+    }
+
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 5000); // Change slide every 5 seconds
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<header>
+  <h1>Limited Edition Prints</h1>
+  <p>Capturing the echoes of your spirit, these prints offer beauty that endures. Only a select few—crafted with intention, preserved in time.</p>
+</header>
+
+<section class="limited-edition-gallery">
+  <!-- Whispers of the Spirit Series -->
+  <h2>Whispers of the Spirit Series</h2>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Daraprintify.jpg" alt="Dara by Gina">
+    </a>
+    <p class="title">Dara</p>
+  </div>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Ginalynneprintify.jpg" alt="Ginalynne by Gina">
+    </a>
+    <p class="title">Ginalynne</p>
+  </div>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Teresaprintify.jpg" alt="Teresa by Gina">
+    </a>
+    <p class="title">Teresa</p>
+  </div>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Angelynneprintify.jpg" alt="Angelynne Ethereal by Gina">
+    </a>
+    <p class="title">Angelynne Ethereal</p>
+  </div>
+
+  <!-- Love & Roses Series -->
+  <h2>Love & Roses Series</h2>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Memoriesprintify.jpg" alt="Memories by Gina">
+    </a>
+    <p class="title">Memories</p>
+  </div>
+
+  <!-- Repeat the same block for Shadows, Patience, Longing, Desire, Broken, At Last -->
+
+  <!-- Musical Nudes Series -->
+  <h2>Musical Nudes Series</h2>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Angieprintify.jpg" alt="Angie by Gina">
+    </a>
+    <p class="title">Angie</p>
+  </div>
+
+  <!-- Repeat for Thorn and Strutter -->
+
+  <!-- Fantasy and Whimsey Series -->
+  <h2>Fantasy and Whimsey Series</h2>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Dreamerprintify.jpg" alt="Dreamer by Gina">
+    </a>
+    <p class="title">Dreamer</p>
+  </div>
+
+  <div class="art-piece">
+    <a href="PASTE_ETSY_LINK_HERE" target="_blank">
+      <img src="Tatteredprintify.jpg" alt="Tattered Wings by Gina">
+    </a>
+    <p class="title">Tattered Wings</p>
+  </div>
+</section>
+
+<footer class="etsy-footer">
+  <p>Available for Purchase Through Etsy</p>
+</footer>
